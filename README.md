@@ -13,7 +13,7 @@ There already exists an HTML5/JavaScript version, which we implemented for the c
 These steps have to be done in a private repository, because of the ImpactJS library.
 
 
-## Contributors
+## Contributors to iKuh using clay.io and ImpactJS
 
 [Martin Krueger](https://github.com/mkaydev)
 
