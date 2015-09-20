@@ -2,7 +2,7 @@
 
 This repository is supposed to contain an HTML5/JavaScript implementation of iKuh that is open source and can be played on github pages. The original iKuh desktop version can be downloaded [here](https://github.com/ikuh/ikuh.desktop).
 
-There already exists an HTML5/JavaScript version, which we implemented for the clay.io Got Game? competition. Unfortunately we can't just push the code to github. There are some things that we need to take care of:
+There already exists an [HTML5/JavaScript version](https://ikuh.clay.io/game/ikuh), which we implemented for the clay.io Got Game? competition. Unfortunately we can't just push the code to github. There are some things that we need to take care of:
 
 1. Fixing the dependency to clay.io. Since July the API of clay.io seems to have changed. The previous path to the api library doesn't exist anymore. This leads to weird strict MIME-type checking errors, because clay.io returns a blank page instead of a 404. We want to have iKuh running on clay.io again before we start with moving it to github pages.
 
