@@ -1,0 +1,18 @@
+{
+    "name": "iKuh",
+    "version": "0.0.0",
+    "icons": {
+        "128": "media/128.png"
+    },
+    "app": {
+        "launch": {
+            "local_path": "index.html"
+        }
+    },
+    "description":
+        "Help Bessy, the prize-winning cow, on its quest for fame and fortune. Use the arrows to guide her to her next big prize.\n\niKuh is a puzzle game with hours of challenging brainteasers and a loveable cast of farm animals.",
+    "promo_images": {
+        "440": "media/440.png",
+        "920": "media/920.png"
+    }
+}

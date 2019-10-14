@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iKuh</title>
+    <style type="text/css">
+        html,body {
+            background-color: #333;
+            color: #fff;
+            font-family: helvetica, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 12pt;
+        }
+
+        #canvas {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+
+    <script src="lib/plugins/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/thirdparty/tween.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="game.min.js"></script>
+
+    <script>
+        document.ontouchstart = function(e){
+            e.preventDefault();
+        };
+
+        function adjustCanvasSize() {
+            var canvasRatio = 832 / 512;
+            var width = $(window.parent).innerWidth();
+            var height = $(window).innerHeight();
+            var screenRatio = width / height;
+
+            var canvas = $("#canvas");
+
+            if (screenRatio > canvasRatio) {
+                if (height < 512) {
+                    canvas.height(height);
+                    canvas.width(height * canvasRatio);
+                } else {
+                    canvas.width(832);
+                    canvas.height(512);
+                }
+            } else {
+                if (width < 832) {
+                    canvas.height(width / canvasRatio);
+                    canvas.width(width);
+                } else {
+                    canvas.width(832);
+                    canvas.height(512);
+                }
+            }
+        };
+
+        $(document).ready(function() {
+            adjustCanvasSize();
+            $(window).resize(adjustCanvasSize);
+        });
+    </script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+</html>
